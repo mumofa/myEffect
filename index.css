@@ -1,0 +1,150 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+.clearfix{zoom:1;}
+.clearfix:after{content:""; display:block; height:0; line-height:0; clear:both; visibility:hidden; }
+ul,li {list-style: none;}
+body {
+    line-height:1;
+}
+
+:focus {
+    outline: 1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+body,html {
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    font-family: "Microsoft Yi Baiti";
+}
+
+.effectBox {
+    border: 1px solid #666;
+    padding: 20px;
+}
+.effectBox .effectItem {
+    float: left;
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #333;
+}
+.effectItem .effectShow {
+    height: 150px;
+    position: relative;
+}
+.effectItem .effectTitle {
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.arrowTipEffect {
+    width: 44px;
+    height: 47px;
+    bottom: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -22px;
+    background: linear-gradient(to top,rgba(255,255,255,.5) 0%,rgba(255,255,255,.5) 10%,white 50%,rgba(255,255,255,.5) 90%,rgba(255,255,255,.5) 100%);
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: siriFooter 0.5s infinite linear;
+    -webkit-mask-box-image: url("image/tipArrow.svg");
+}
+@-webkit-keyframes siriFooter {
+    0% {
+        background-position:0 0;
+    }
+    100%{
+        background-position:0 -47px;
+    }
+}
